@@ -10,7 +10,7 @@ body{
 
 .header{
     width: 100%;
-    height: 20vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +59,20 @@ body{
     border-radius: 15px;
 }
 
+#player, #ai{
+    background-image: none;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#winner{
+    opacity: 0%;
+    color:black;
+    text-shadow: 0 0 5px greenyellow;
+    font-size: 4vw;
+}
+
 .results{
     min-width: 15vw;
     max-width: 15vw;
@@ -73,21 +87,36 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 3vw;
+    height: 2vw;
     margin-bottom: 2vh;
 }
 
 .history div{
-    height: 3vw;
-    width: 3vw;
-    background-image: url("stone.png");
+    height: 2vw;
+    width: 2vw;
+    background-image: none;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 15px;
     border: 0 0 50px rgba(112, 39, 4, 1);
     border: 3px solid white;
-    background-color: rgba(122, 43, 13, 0.98);
+}
+
+#hist div:nth-child(1) div:nth-child(1), #hist div:nth-child(1) div:nth-child(2){
+    background-color: #f15858;
+}
+#hist div:nth-child(2) div:nth-child(1), #hist div:nth-child(2) div:nth-child(2){
+    background-color: #f45c73;
+}
+#hist div:nth-child(3) div:nth-child(1), #hist div:nth-child(3) div:nth-child(2){
+    background-color: #f3648d;
+}
+#hist div:nth-child(4) div:nth-child(1), #hist div:nth-child(4) div:nth-child(2){
+    background-color: #ee6fa4;
+}
+#hist div:nth-child(5) div:nth-child(1), #hist div:nth-child(5) div:nth-child(2){
+    background-color: #e57bb9;
 }
 
 .text{
@@ -159,4 +188,8 @@ body{
 
 #btn3{
     background-image: url("scissors.png");
+}
+
+.footer{
+    height:15vh;
 }

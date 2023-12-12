@@ -70,7 +70,13 @@ body{
     opacity: 0%;
     color:black;
     text-shadow: 0 0 1px white;
-    font-size: 4vw;
+    font-size: 2vw;
+    background-image: url("inform.jpg");
+    background-size: contain;
+    background-position: center;
+    padding: 0 2vw;
+    border: 0.2vw solid black;
+    border-radius: 1vw;
 }
 
 .results{

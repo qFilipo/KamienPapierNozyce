@@ -54,12 +54,17 @@ body{
     margin: 0 5vw;
     width: 6vw;
     height: 6vw;
-    background-color: #87d0dc;
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     border: 0.3vw solid black;
     border-radius: 1vw;
 }
 
 #player, #ai{
+    width: inherit;
+    height: inherit;
     background-image: none;
     background-size: 70%;
     background-repeat: no-repeat;
@@ -197,4 +202,43 @@ body{
 
 .footer{
     height:15vh;
+}
+
+#fireworks1, #fireworks2, #fireworks3, #fireworks4{
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    opacity: 0%;
+    background-repeat: no-repeat;
+    background-image: none;
+    background-position: center;
+    background-size: 70%;
+}
+
+#youwin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 10vw;
+    width: 20vw;
+    opacity: 0%;
+    top:50%;
+    left:50%;
+    background-color: Green;
+    border: 1px solid black;
+    border-radius: 2vw;
+    animation: resizing 2s ease infinite;
+}
+
+@keyframes resizing{
+    0%{
+        transform: translate(-50%, -40%) scale(1);
+    }
+    50%{
+        transform: translate(-50%, -40%) scale(1.2);
+    }
+    100%{
+        transform: translate(-50%, -40%) scale(1);
+    }
 }

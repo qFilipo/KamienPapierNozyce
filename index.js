@@ -30,6 +30,7 @@ function genAi(val){
 
 let resPla=0
 let resAi=0
+let result=0
 
 function displayResult(val1, val2){
     let winner=document.getElementById("winner")
@@ -64,6 +65,7 @@ function displayResult(val1, val2){
                 winner.style.opacity = "0%"
                 resPla++
                 pla.textContent = resPla
+                startFireworks(resPla)
             }, 1000)
         }
         else if (res ==2){
@@ -73,6 +75,7 @@ function displayResult(val1, val2){
                 winner.style.opacity = "0%"
                 resAi++
                 ai.textContent = resAi
+                startFireworks(resAi)
             }, 1000)
         }
         else{
@@ -88,8 +91,6 @@ function displayResult(val1, val2){
 }
 
 function history(val1, val2){
-    console.log(val1)
-    console.log(val2)
     let h=document.getElementById("hist")
 
     h.children[4].children[0].style.backgroundImage=h.children[3].children[0].style.backgroundImage
@@ -121,4 +122,81 @@ function history(val1, val2){
     else{
         h.children[0].children[0].style.backgroundImage="url('scissors.png')"
     }
+}
+
+function fireworkDisplay1(){
+    let fire1=document.getElementById("fireworks1")
+
+    fire1.style.backgroundImage = "url('giphy2.gif')"
+    fire1.style.left = (Math.random() *10)+40 + "%"
+    fire1.style.top = (Math.random() * 10)+50 + "%"
+    fire1.style.opacity = "100%"
+    function reset(){
+        fire1.style.backgroundImage = "none"
+    }
+    setTimeout(reset, 1700)
+}
+
+function fireworkDisplay2(){
+    let fire2=document.getElementById("fireworks2")
+
+    fire2.style.backgroundImage = "url('giphy2.gif')"
+    fire2.style.left = (Math.random() *10)+60 + "%"
+    fire2.style.top = (Math.random() * 10)+50 + "%"
+    fire2.style.opacity = "100%"
+    function reset(){
+        fire2.style.backgroundImage = "none"
+    }
+    setTimeout(reset, 1700)
+}
+
+function fireworkDisplay3(){
+    let fire3=document.getElementById("fireworks3")
+
+    fire3.style.backgroundImage = "url('giphy2.gif')"
+    fire3.style.left = (Math.random() *10)+50 + "%"
+    fire3.style.top = (Math.random() * 10)+30 + "%"
+    fire3.style.opacity = "100%"
+    function reset(){
+        fire3.style.backgroundImage = "none"
+    }
+    setTimeout(reset, 1700)
+}
+
+function fireworkDisplay4(){
+    let fire4=document.getElementById("fireworks4")
+
+    fire4.style.backgroundImage = "url('giphy2.gif')"
+    fire4.style.left = (Math.random() *10)+50 + "%"
+    fire4.style.top = (Math.random() * 10)+50 + "%"
+    fire4.style.opacity = "100%"
+    function reset(){
+        fire4.style.backgroundImage = "none"
+    }
+    setTimeout(reset, 1700)
+}
+
+function dispalyFire(){
+        let var1=Math.random()*1000
+        let var2=var1*Math.random()+1000
+        let var3=var1*Math.random()+2000
+        fireworkDisplay1()
+        setTimeout(fireworkDisplay2,var1)
+        setTimeout(fireworkDisplay3,var2)
+        setTimeout(fireworkDisplay4,var3)
+}
+
+function startFireworks(result){
+    if (result == 1){
+        winner()
+        dispalyFire()
+        setInterval(function(){
+            dispalyFire()
+        }, 3000)
+    }
+}
+
+function winner(){
+    let win=document.getElementById("youwin")
+    win.style.opacity = "100%"
 }

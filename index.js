@@ -128,8 +128,8 @@ function fireworkDisplay1(){
     let fire1=document.getElementById("fireworks1")
 
     fire1.style.backgroundImage = "url('giphy2.gif')"
-    fire1.style.left = (Math.random() *10)+40 + "%"
-    fire1.style.top = (Math.random() * 10)+50 + "%"
+    fire1.style.left = (Math.random() *2)+37 + "%"
+    fire1.style.top = (Math.random() * 4)+40 + "%"
     fire1.style.opacity = "100%"
     function reset(){
         fire1.style.backgroundImage = "none"
@@ -141,8 +141,8 @@ function fireworkDisplay2(){
     let fire2=document.getElementById("fireworks2")
 
     fire2.style.backgroundImage = "url('giphy2.gif')"
-    fire2.style.left = (Math.random() *10)+60 + "%"
-    fire2.style.top = (Math.random() * 10)+50 + "%"
+    fire2.style.left = (Math.random() *2)+52 + "%"
+    fire2.style.top = (Math.random() * 4)+40 + "%"
     fire2.style.opacity = "100%"
     function reset(){
         fire2.style.backgroundImage = "none"
@@ -154,8 +154,8 @@ function fireworkDisplay3(){
     let fire3=document.getElementById("fireworks3")
 
     fire3.style.backgroundImage = "url('giphy2.gif')"
-    fire3.style.left = (Math.random() *10)+50 + "%"
-    fire3.style.top = (Math.random() * 10)+30 + "%"
+    fire3.style.left = (Math.random() *4)+44 + "%"
+    fire3.style.top = (Math.random() *2)+40 + "%"
     fire3.style.opacity = "100%"
     function reset(){
         fire3.style.backgroundImage = "none"
@@ -167,8 +167,8 @@ function fireworkDisplay4(){
     let fire4=document.getElementById("fireworks4")
 
     fire4.style.backgroundImage = "url('giphy2.gif')"
-    fire4.style.left = (Math.random() *10)+50 + "%"
-    fire4.style.top = (Math.random() * 10)+50 + "%"
+    fire4.style.left = (Math.random() *4)+44 + "%"
+    fire4.style.top = (Math.random() * 2)+45 + "%"
     fire4.style.opacity = "100%"
     function reset(){
         fire4.style.backgroundImage = "none"

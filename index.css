@@ -220,15 +220,18 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    height: 10vw;
-    width: 20vw;
+    height: 15vw;
+    width: 15vw;
     opacity: 0%;
     top:50%;
     left:50%;
-    background-color: Green;
     border: 1px solid black;
-    border-radius: 2vw;
+    border-radius: 50%;
     animation: resizing 2s ease infinite;
+    background-image: url("win.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 @keyframes resizing{
@@ -236,7 +239,7 @@ body{
         transform: translate(-50%, -40%) scale(1);
     }
     50%{
-        transform: translate(-50%, -40%) scale(1.2);
+        transform: translate(-50%, -40%) scale(1.1);
     }
     100%{
         transform: translate(-50%, -40%) scale(1);

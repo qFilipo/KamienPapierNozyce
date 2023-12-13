@@ -134,7 +134,7 @@ function fireworkDisplay1(){
     function reset(){
         fire1.style.backgroundImage = "none"
     }
-    setTimeout(reset, 1700)
+    setTimeout(reset, 1000)
 }
 
 function fireworkDisplay2(){
@@ -147,7 +147,7 @@ function fireworkDisplay2(){
     function reset(){
         fire2.style.backgroundImage = "none"
     }
-    setTimeout(reset, 1700)
+    setTimeout(reset, 1000)
 }
 
 function fireworkDisplay3(){
@@ -160,7 +160,7 @@ function fireworkDisplay3(){
     function reset(){
         fire3.style.backgroundImage = "none"
     }
-    setTimeout(reset, 1700)
+    setTimeout(reset, 10)
 }
 
 function fireworkDisplay4(){
@@ -173,7 +173,7 @@ function fireworkDisplay4(){
     function reset(){
         fire4.style.backgroundImage = "none"
     }
-    setTimeout(reset, 1700)
+    setTimeout(reset, 1000)
 }
 
 function dispalyFire(){
@@ -187,7 +187,7 @@ function dispalyFire(){
 }
 
 function startFireworks(result){
-    if (result == 1){
+    if (result == 10){
         winner()
         dispalyFire()
         setInterval(function(){

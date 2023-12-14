@@ -2,16 +2,31 @@ function stone() {
     document.getElementById("player").style.backgroundImage = "url('stone.png')"
     document.getElementById("player").disabled=true;
     setTimeout(genAi, 1000,1)
+
+    disableButtons(); // Wyłącz przyciski na początku operacj
+    setTimeout(() => {
+        enableButtons(); // Włącz przyciski po zakończeniu operacji
+    }, 3000);
 }
 
 function paper() {
     document.getElementById("player").style.backgroundImage = "url('paper.png')"
     setTimeout(genAi, 1000,2)
+
+    disableButtons(); // Wyłącz przyciski na początku operacji
+    setTimeout(() => {
+        enableButtons(); // Włącz przyciski po zakończeniu operacji
+    }, 3000);
 }
 
 function scissors() {
     document.getElementById("player").style.backgroundImage = "url('scissors.png')"
     setTimeout(genAi, 1000,3)
+
+    disableButtons(); // Wyłącz przyciski na początku operacji
+    setTimeout(() => {
+        enableButtons(); // Włącz przyciski po zakończeniu operacji
+    }, 3000);
 }
 
 function genAi(val){
@@ -200,3 +215,17 @@ function winner(){
     let win=document.getElementById("youwin")
     win.style.opacity = "100%"
 }
+
+function enableButtons() {
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => {
+        button.disabled = false;
+    });
+}
+
+function disableButtons() {
+    const buttons = document.querySelectorAll("button"); // Zakładając, że wszystkie przyciski gry są elementami <button>
+    buttons.forEach(button => {
+        button.disabled = true;
+    })
+};

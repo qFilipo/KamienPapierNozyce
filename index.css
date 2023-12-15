@@ -57,7 +57,7 @@ body{
     background-image: url("tlo.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border: 0.3vw solid black;
     border-radius: 1vw;
 }

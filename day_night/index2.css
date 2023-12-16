@@ -32,6 +32,35 @@ body{
     height: 12px;
 }
 
+/* xs */
+@media (max-width: 475px) {
+    #day-night{
+        top: 5px;
+        right: 5px;
+        min-height: 20px;
+        min-width: 50px;
+        border-radius: 15px;
+        border: 1px solid black;
+    }
+    
+    #day,#night{
+        width: 15px;
+    }
+    
+    #shift{
+        height: 10px;
+        min-width: 20px;
+        padding: 0 0.1vw;
+        border-radius: 15px;
+        border: 1px solid black; 
+    }
+    
+    #ball{
+        width: 6px;
+        height: 6px;
+    }
+}
+
 #day-night{
     position: absolute ;
     background-color: inherit;

@@ -44,8 +44,9 @@ body{
     min-width: 50vw;
     max-width: 50vw;
     border-radius: 2vw;
-    background-image: url("floor.jpg");
-    background-size: contain;
+    background-image: url("floor.png");
+    background-size: cover;
+    background-position: center;
     border: 0.3vw solid rgba(112, 39, 4, 1);
     margin:0 5vw;
 }

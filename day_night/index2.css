@@ -7,7 +7,7 @@ body{
 }
 
 #day-night{
-    position: sticky;
+    position: absolute;
     top: 2vh;
     left: 93vw;
     width: 5vw;

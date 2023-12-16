@@ -7,21 +7,37 @@ body{
 }
 
 #day-night{
-    position: absolute;
-    top: 2vh;
-    left: 93vw;
-    width: 5vw;
-    height: 3vh;
+    top: 10px;
+    right: 10px;
+    min-height: 40px;
+    min-width: 100px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+#day,#night{
+    width: 30px;
+}
+
+#shift{
+    height: 20px;
+    min-width: 40px;
+    padding: 0 0.1vw;
+    border-radius: 30px;
+    border: 2px solid black; 
+}
+
+#ball{
+    width: 12px;
+    height: 12px;
+}
+
+#day-night{
+    position: absolute ;
     background-color: inherit;
     display: flex;
     justify-content: space-between;
     background-color: rgba(59, 59, 59, 0.81);
-    border-radius: 1vw;
-    border: 0.2vh solid black;
-}
-
-#day,#night{
-    width: 1.5vw;
 }
 
 #day{
@@ -30,17 +46,11 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-size: 70%;
-    filter: drop-shadow(0 0 0.3vw yellow);
+    filter: drop-shadow(0 0 1px yellow);
 }
 
 #shift{
-    height: 1.6vh;
-    width: 2vw;
-    margin: 0;
-    padding: 0 0.1vw;
     box-sizing: border-box;
-    border-radius: 1vw;
-    border: 0.2vh solid black; 
     margin: auto 0;
 }
 
@@ -59,8 +69,6 @@ body{
 #ball{
     background-color: black;
     border-radius: 50%;
-    width: 1.1vh;
-    height: 1.1vh;
 }
 
 @keyframes movie {
@@ -68,13 +76,13 @@ body{
         transform: translateX(0%);
     }
     to{
-        transform: translateX(1vw);
+        transform: translateX(16px);
     }
 }
 
 @keyframes movie2 {
     from{
-        transform: translateX(1vw);
+        transform: translateX(16px);
     }
     to{
         transform: translateX(0%);

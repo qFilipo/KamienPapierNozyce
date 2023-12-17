@@ -77,8 +77,8 @@ body{
     color:black;
     text-shadow: 0 0 1px white;
     font-size: 2vw;
-    background-image: url("inform.jpg");
-    background-size: contain;
+    background-image: url("inform.png");
+    background-size: cover;
     background-position: center;
     padding: 0 2vw;
     border: 0.2vw solid black;
